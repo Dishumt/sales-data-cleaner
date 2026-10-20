@@ -15,14 +15,9 @@ Basically, it drops rows with missing essential fields (IDs, price, quantity), i
 * `test_project.py`: Unit tests using `pytest` to verify core cleaning logic.
 * `requirements.txt`: Required dependencies.
 
-## Dataset Options
-
-* **Quick Test:** Use the included `sample_data.csv` for an immediate run:
-  ```bash
-  python project.py sample_data.csv
-  
-* **Full Dataset:** Unzip Year 2009-2010.zip to get the full CSV dataset (500k+ records) and run:
-  ```bash
-  python project.py "Year 2009-2010.csv"
-
+### How to Run
+```bash
+python project.py Year_2009-2010.csv
+pytest test_project.py
+    
 
